@@ -13,6 +13,7 @@ module.exports = config => {
     // mongoose.connect('mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]' [, options]);
     const db = mongoose.createConnection(config.url, config.options);
     let Schema = mongoose.Schema;
+    let model = mongoose.model;
 
     ['error', 'disconnected', 'connected', 'reconnected'].forEach(status => {
         db.on(status, err => {
@@ -22,5 +23,5 @@ module.exports = config => {
         });
     });
 
-    return {db, Schema};
+    return {db, Schema, model, mongoose};
 };
