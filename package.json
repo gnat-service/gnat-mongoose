@@ -1,0 +1,26 @@
+{
+  "name": "gnat-mongoose",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gnat-service/gnat-mongoose.git"
+  },
+  "keywords": [
+    "gnat",
+    "mongoose"
+  ],
+  "author": "leaf4monkey <joc98@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnat-service/gnat-mongoose/issues"
+  },
+  "homepage": "https://github.com/gnat-service/gnat-mongoose#readme",
+  "dependencies": {
+    "mongoose": "^4.10.5"
+  }
+}
